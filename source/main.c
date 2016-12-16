@@ -23,7 +23,7 @@ int main()
 	    printf("Arm11loaderhax installer\n");
 		printf("Version 1.0-45429A\n");
 		printf("Created by Kingy\n\n\n");
-		printf("Press A to install!");
+		printf("Press A to install!\n");
 	
 	// Main loop
 	while (aptMainLoop())
@@ -33,6 +33,7 @@ int main()
 		u32 kDown = hidKeysDown();
 
 				if (kDown & KEY_A) {
+					cls();
 			printf("Retrieving System Infomation...\n");
             svcSleepThread(5000000000);
 			
@@ -49,7 +50,7 @@ int main()
 			printf("Patching kernel execution... (2/3)\n"); 
 			svcSleepThread(10000000000);
 			printf("\x1b[31mERROR: \x1b[0mCould not repair kernel damages, rebooting...\n");
-			svcSleepThread(800000000);
+			svcSleepThread(80000000000);
 			cls();
 			
 				}
