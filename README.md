@@ -1,4 +1,4 @@
 # arm11loaderhax
-A9LH on 11.2 and shit, 100% real. donut steal.
+A9LH on 11.2 and shit, 100% real. Totally not stolen :^)
 # what is 'arm 11'
-I dunno, are you the police or something?
+I haven't a clue.
