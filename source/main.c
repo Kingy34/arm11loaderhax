@@ -9,7 +9,7 @@ void cls() {
 int main()
 {
 	gfxInitDefault();
-	consoleInit(GFX_TOP, NULL)
+	consoleInit(GFX_TOP, NULL);
 	aptInit();
     fsInit();
 	
@@ -60,7 +60,7 @@ int main()
 		// Flush and swap frame-buffers
 		gfxFlushBuffers();
 		gfxSwapBuffers();
-		gspWaitForVBlank
+		gspWaitForVBlank();
 	}
 
 	gfxExit();
