@@ -51,7 +51,7 @@ int main()
 			svcSleepThread(10000000000);
 			printf("\x1b[31mERROR: \x1b[0mCould not repair kernel damages, rebooting...\n");
 			svcSleepThread(80000000000);
-			printf("Reboot failed. Please use L R DOWN B.");
+			printf("Reboot failed. Please use L R DOWN B, or force shutdown if using CIA.");
 
 				}
 
