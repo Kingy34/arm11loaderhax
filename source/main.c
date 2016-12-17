@@ -19,9 +19,9 @@ int main()
 	
     cls();
 	
-
+ 
 	    printf("Arm11loaderhax installer\n");
-		printf("Version 1.0-45429A\n");
+		printf("Version 1.1-141171A\n");
 		printf("Created by Kingy\n\n\n");
 		printf("Press A to install!\n");
 	
@@ -51,10 +51,10 @@ int main()
 			svcSleepThread(10000000000);
 			printf("\x1b[31mERROR: \x1b[0mCould not repair kernel damages, rebooting...\n");
 			svcSleepThread(80000000000);
-			cls();
-			
+			printf("Reboot failed. Please use L R DOWN B.");
+
 				}
-			
+
 		if (kDown & KEY_START)
 			break;
 
