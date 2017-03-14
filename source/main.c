@@ -49,9 +49,30 @@ int main()
 			svcSleepThread(5000000000);
 			printf("Patching kernel execution... (2/3)\n"); 
 			svcSleepThread(10000000000);
-			printf("\x1b[31mERROR: \x1b[0mCould not repair kernel damages, rebooting...\n");
-			svcSleepThread(80000000000);
-			printf("Reboot failed. Please use L R DOWN B, or force shutdown if using CIA.");
+			printf("Writing Bootloader... (ARM11LOAD)\n");
+			svcSleepThread(5000000000);
+			cls();
+			svcSleepThread(200000000);
+		        printf("ARM11LOAD ~ v1.0-ALPHA\n\n");
+			printf("Creating 'config.bin'...\n");
+			svcSleepThread(2000000000);
+			printf("Done.\n\n");
+			printf("CONFIG.BIN: Defaults set to: CTR/ARM11LH/homebrewlauncher\n");
+			printf("Booting The Homebrew Launcher...");
+			svcSleepThread(1000000000);
+					
+			gfxFlushBuffers();
+		        gfxSwapBuffers();
+		        gspWaitForVBlank();
+					
+		 	// Kicking time :^)
+					
+		        	gfxExit();
+	                        aptExit();
+	                        fsExit();
+	                         return 0;
+		        
+			
 
 				}
 
